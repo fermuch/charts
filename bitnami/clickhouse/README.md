@@ -151,6 +151,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | Name                            | Description                                                                                                              | Value                   |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------- |
 | `keeper.enabled`                | Deploy ClickHouse keeper. Support is experimental.                                                                       | `false`                 |
+| `interClusterSecret`            | Nodes that share the same non-empty secret trust each other                                                              | `""`                    |
 | `defaultConfigurationOverrides` | Default configuration overrides (evaluated as a template)                                                                | `""`                    |
 | `existingOverridesConfigmap`    | The name of an existing ConfigMap with your custom configuration for ClickHouse                                          | `""`                    |
 | `extraOverrides`                | Extra configuration overrides (evaluated as a template) apart from the default                                           | `""`                    |
